@@ -3,14 +3,17 @@ package ArraysHW;
 public class Task8 {
     public static void main(String[] args) {
 
-        int x=0;
-        int y=1;
-        int z;
+        /*
+        Write a Java Program to print the first 10 numbers of Fibonacci series.
+         */
+        int a=0;
+        int b=1;
+        int c;
         for (int i = 0; i < 10; i++) {
-            System.out.print(x+" ");
-            z=x+y;
-            x=y;
-            y=z;
+            System.out.print(a+" ");
+            c=a+b;
+            a=b;
+            b=c;
 
         }
     }

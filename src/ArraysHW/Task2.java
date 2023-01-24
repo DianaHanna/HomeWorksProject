@@ -9,6 +9,7 @@ public class Task2 {
         while retrieving those values print capital for each country. (use 2 different loops).
          */
         Scanner scanner=new Scanner(System.in);
+        System.out.println("Please enter 5 countries");
         String[][] country= new String[5][5];
 
 
