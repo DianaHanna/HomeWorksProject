@@ -1,4 +1,4 @@
-package ArraysHW;
+package ProjectTasks;
 
 import java.util.Scanner;
 

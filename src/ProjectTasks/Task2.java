@@ -1,6 +1,5 @@
-package ArraysHW;
+package ProjectTasks;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.Scanner;
 
 public class Task2 {
