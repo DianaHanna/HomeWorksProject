@@ -11,10 +11,12 @@ public class Task2 {
          */
         String str="Aygw udhi iWETR58918 998% @&%!^";
         int alphanumericCount = 0;
-        Pattern pattern = Pattern.compile("[a-zA-Z0-9]");
-        Matcher matcher = pattern.matcher(str);
-        while (matcher.find()) {
-            alphanumericCount++;
+        for (int i = 0; i <str.length(); i++) {
+            if (Character.isAlphabetic(str.charAt(i))){
+                alphanumericCount++;
+        } else if (Character.isDigit(str.charAt(i))) {
+                alphanumericCount++;
+            }
         }
         System.out.println("The number of alphanumeric characters in the string is: " + alphanumericCount);
             }
