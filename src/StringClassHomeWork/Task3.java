@@ -30,12 +30,12 @@ Suggested baby name: MAIEL
 
         String suggestName="";
         if (babyGender.equalsIgnoreCase("boy")){
-            suggestName=dadName.substring(0,3)+momName.substring(2);
+            suggestName=dadName.substring(0,dadName.length()/2)+momName.substring(momName.length()/2);
         } else if (babyGender.equalsIgnoreCase("girl")) {
-            suggestName=momName.substring(0,2)+dadName.substring(3);
+            suggestName=momName.substring(0,momName.length()/2)+dadName.substring(dadName.length()/2);
         }
         System.out.println(suggestName);
 
-        
+
     }
 }
