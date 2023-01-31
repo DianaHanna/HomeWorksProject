@@ -11,26 +11,21 @@ public class Task4 {
      */
 
     String language(String country) {
-        switch (country) {
+        switch (country) { // when we use return method we don't need break;
             case "Egypt":
-                System.out.println("اهلا");
-                break;
+                return ("اهلا");
             case "USA":
-                System.out.println("Hello");
-                break;
+              return ("Hello");
             case "France":
-                System.out.println("Bonjour");
-                break;
+                return ("Bonjour");
             case "Spain":
-                System.out.println("Hola");
-                break;
+                return ("Hola");
             case "Italy":
-                System.out.println("Ciao");
-                break;
+                return ("Ciao");
+            default:
+                return "error";
         }
-        return country;
     }
-
 
         public static void main (String[]args){
             Task4 task4 = new Task4();

@@ -10,24 +10,24 @@ public class Task5 {
 
     boolean isPrime(int number) {
         boolean isPrime = true;
-        if (number <= 1) {
-            return false;
-        } else {
-
+        if (number>1) {
             for (int i = 2; i <= number / 2; i++) {
                 if (number % i == 0) {
-                    return false;
+                    isPrime = false;
+                    break;
                 }
             }
+        } else {
+            isPrime=false;
+                }
             return isPrime;
         }
 
-    }
 
 
     public static void main(String[] args) {
 
         Task5 task5=new Task5();
-        System.out.println(task5.isPrime(17));
+        System.out.println(task5.isPrime(13));
     }
 }
