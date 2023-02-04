@@ -21,10 +21,8 @@ public class Car {
 
 
     }
-    Car (String carModel, String carColor, int carYear){
-        model=carModel;
-        color=carColor;
-        year=carYear;
+    Car (){
+
     }
     protected Car(String carColor, String carModel, double carPrice){
         color=carColor;
@@ -43,7 +41,7 @@ public class Car {
 
         Car car=new Car("Toyota", "White", 2023, 32.000);
         car.printInfo();
-        Car car1=new Car("VW","Grey",2022,32.000);
+        Car car1=new Car();
         car1.printInfo();
         Car car2=new Car("Honda","Black",2021, 55.000);
         car2.printInfo();

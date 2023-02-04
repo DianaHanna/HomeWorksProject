@@ -12,10 +12,10 @@ public class Book {
     int year;
     String author;
 
-    public Book(String bookName, int bookYear, String bookAuthor){ // instance variables initialization
-        name=bookName;
-        year=bookYear;
-        author=bookAuthor;
+    public Book(String name, int year, String author){ // instance variables initialization
+        this.name=name;
+        this.year=year;
+        this.author=author;
     }
 
 

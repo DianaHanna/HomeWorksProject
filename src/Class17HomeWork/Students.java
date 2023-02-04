@@ -13,13 +13,13 @@ public class Students {
     double scienceGrade;
     double averageGrade;
 
-    Students(String studentName, double studentElaGrade, double studentMathGrade, double studentScienceGrade){
-        name=studentName;
-        elaGrade=studentElaGrade;
-        mathGrade=studentMathGrade;
-        scienceGrade=studentScienceGrade;
+    Students(String name, double elaGrade, double mathGrade, double scienceGrade){
+        this.name=name;
+        this.elaGrade=elaGrade;
+        this.mathGrade=mathGrade;
+        this.scienceGrade=scienceGrade;
 
-        averageGrade=(studentElaGrade+studentMathGrade+studentScienceGrade)/3;
+        averageGrade=(elaGrade+mathGrade+scienceGrade)/3;
     }
     void printInfo(){
         System.out.println("Student Name: "+name+" Average Grade :"+averageGrade);
