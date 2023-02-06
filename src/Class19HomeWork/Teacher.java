@@ -7,7 +7,7 @@ public class Teacher {
     String subject;
 
     // Behaviors
-    public void teach() {
+    private void teach() {
         System.out.println(this.name + " is teaching " + this.subject);
     }
 
@@ -71,7 +71,6 @@ class PianoTeacher extends Teacher {
         mathTeacher.age = 45;
         mathTeacher.subject = "Math";
         mathTeacher.mathSubjects = new String[]{"Algebra", "Calculus"};
-        mathTeacher.teach();
         mathTeacher.teachMath();
         mathTeacher.solveMathProblem();
 
@@ -80,7 +79,6 @@ class PianoTeacher extends Teacher {
         chemistryTeacher.age = 35;
         chemistryTeacher.subject = "Chemistry";
         chemistryTeacher.chemicals = new String[]{"Hydrogen", "Oxygen"};
-        chemistryTeacher.teach();
         chemistryTeacher.teachChemistry();
         chemistryTeacher.conductExperiment();
 
@@ -89,7 +87,6 @@ class PianoTeacher extends Teacher {
         pianoTeacher.age = 30;
         pianoTeacher.subject = "Piano";
         pianoTeacher.pianoStyles = new String[]{"Classical", "Jazz"};
-        pianoTeacher.teach();
         pianoTeacher.teachPiano();
         pianoTeacher.playPiano();
     }
