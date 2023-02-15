@@ -8,7 +8,7 @@ public interface WebDriver {
     void maximizeWindow();
     void findElement();
 }
-class ChromeDriver implements WebDriver{
+class ChromeDriver implements WebDriver {
 
     @Override
     public void openBrowser() {
@@ -29,25 +29,37 @@ class ChromeDriver implements WebDriver{
     public void findElement() {
         System.out.println("You can find the element in Chrome Browser");
     }
-class FirefoxDriver implements WebDriver{
-    @Override
-    public void openBrowser() {
-        System.out.println("You can open Firefox Browser");
-    }
-
-    @Override
-    public void closeBrowser() {
-        System.out.println("You can close Firefox Browser");
-    }
-
-    @Override
-    public void maximizeWindow() {
-        System.out.println("You can maximize the window on Firefox Browser");
-    }
-
-    @Override
-    public void findElement() {
-        System.out.println("You can find the element in Firefox Browser");
-    }
 }
-}
+    class FirefoxDriver implements WebDriver {
+        @Override
+        public void openBrowser() {
+            System.out.println("You can open Firefox Browser");
+        }
+
+        @Override
+        public void closeBrowser() {
+            System.out.println("You can close Firefox Browser");
+        }
+
+        @Override
+        public void maximizeWindow() {
+            System.out.println("You can maximize the window on Firefox Browser");
+        }
+
+        @Override
+        public void findElement() {
+            System.out.println("You can find the element in Firefox Browser");
+        }
+        
+
+        public static void main(String[] args) {
+
+            WebDriver[] array = {new ChromeDriver(), new FirefoxDriver()};
+            for (WebDriver i:array) {
+                i.openBrowser();
+                i.closeBrowser();
+                i.maximizeWindow();
+                i.findElement();
+            }
+        }
+    }
