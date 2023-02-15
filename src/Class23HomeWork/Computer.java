@@ -9,6 +9,7 @@ public class Computer {
         System.out.println("All computers should have wi-fi connection");
     }
     public void printing(){
+
         System.out.println("All computers should be able to print");
     }
 }
