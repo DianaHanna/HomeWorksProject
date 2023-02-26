@@ -10,13 +10,9 @@ public class Task3 {
         words.add("space");
         words.add("variable");
 
-        for (int i = words.size() - 1; i >= 0; i--) {
-            if (words.get(i).endsWith("e")) {
-                words.remove(i);
+        words.removeIf(x-> x.endsWith("e"));
+        System.out.println(words);
+
             }
-        }
-        for (String word : words) {
-            System.out.println(word);
-        }
     }
-}
+

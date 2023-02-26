@@ -15,8 +15,7 @@ public class Task2 {
         for (int i = 0; i < cars.size(); i++) {
             System.out.println(cars.get(i));
         }
-        System.out.println(cars.get(0));
-        System.out.println(cars.get(1));
-        System.out.println(cars.get(2));
+        System.out.println(cars);
+
     }
 }

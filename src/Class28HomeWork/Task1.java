@@ -12,15 +12,11 @@ public class Task1 {
         names.add("Patrick");
         names.add("Eilora");
 
-        boolean isEmpty=names.isEmpty();
-        System.out.println(isEmpty);
+        System.out.println(names.isEmpty());
 
-        String searchName="Patrick";
-        boolean isPresent=names.contains(searchName);
-        System.out.println(isPresent);
+        System.out.println(names.contains("Patrick"));
 
-        int size=names.size();
-        System.out.println(size);
+        System.out.println(names.size());
 
         for (String name:names) {
             System.out.println(name);
