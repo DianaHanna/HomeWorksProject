@@ -1,13 +1,14 @@
 package Class29HomeWork;
 
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.TreeSet;
 
 public class Task1 {
     public static void main(String[] args) {
 
-       TreeSet<String> cities=new TreeSet<>();
+       LinkedHashSet<String> cities=new LinkedHashSet<>();
         cities.add("Raleigh");
         cities.add("New York");
         cities.add("Chicago");
